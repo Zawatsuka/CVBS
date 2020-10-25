@@ -1,0 +1,52 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+.bg-grise {
+    background-color: #CACACA;
+}
+
+a {
+    color: #616161;
+}
+
+.navcss {
+    color: #616161;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.50rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navchange {
+    display: block;
+    padding: 2%;
+}
+
+.margin {
+    margin-left: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.fonttitle {
+    font-family: 'Raleway', sans-serif;
+}
+.listtaff{
+    list-style: square;
+}
+.fontpara{
+    
+}
+h5{
+    font-size: 30px;
+}
+.box {
+margin-left: 20%;
+}
