@@ -4,14 +4,16 @@ body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
+    background-color: #a8a8a8;
 }
 
 .bg-grise {
-    background-color: #CACACA;
+    background-color: #dadada;
 }
 
 a {
     color: #616161;
+    text-decoration: none;
 }
 
 .navcss {
@@ -38,15 +40,32 @@ a {
 .fonttitle {
     font-family: 'Raleway', sans-serif;
 }
-.listtaff{
+
+.listtaff {
     list-style: square;
 }
-.fontpara{
-    
+
+h5 {
+    font-size: 26px;
 }
-h5{
-    font-size: 30px;
-}
+
 .box {
-margin-left: 20%;
+    margin-left: 20%;
+}
+
+.formtext {
+    font-size: 22px;
+}
+
+a.acontact:hover {
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.textcontact {
+    font-size: 23px;
+}
+.textemail{
+    font-size: 20px;
 }

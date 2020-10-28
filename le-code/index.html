@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-grise">
             <a class="navcss text-decoration-none text-secondary" href="#">
-                <img src="assets/img/mwa_2 (1).png" width="80" height="80" alt="c'est moi">
+                <img src="assets/img/mwa_2 (1).png" width="80" height="80" alt="dessin de Lucas Thomas">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,10 +30,10 @@
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="navchange margin">
-                        <a class="nav-link" href="#">Formation</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#formation">Formation</a>
                     </li>
                     <li class="navchange margin">
-                        <a class="nav-link" href="#">Experiences</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#experiences">Experiences</a>
                     </li>
                     <li class="navchange margin dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -41,13 +41,16 @@
                             Portfolio
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Inktober 2020</a>
-                            <a class="dropdown-item" href="#">Dessins Numeriques</a>
-                            <a class="dropdown-item" href="#">Dessins Traditionnels</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#portfolio">Inktober
+                                2020</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dessin-num">Dessins
+                                Numeriques</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#dessin-tradi">Dessins
+                                Traditionnels</a>
                         </div>
                     </li>
                     <li class="navchange margin">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -71,12 +74,24 @@
             <div class="d-flex">
                 <p>Anglais (Intermediaire) <img src="assets/img/English.png" alt="drapeau Anglais" height="50"
                         width="50" class="align-self-center"></p>
-
+            </div>
+            <div>
+                <h5 class="mb-3">Centres d'intérets</h5>
+                <div class="d-flex flex-row justify-content-center">
+                    <div class="flex-column">
+                        <img src="assets/img/pc.png" width="90" class="img-fluid ml-3 mt-4" alt="">
+                        <img src="assets/img/cinéma.png" width="75" class="img-fluid ml-3 mt-4" alt="">
+                    </div>
+                    <div class="flex-column">
+                         <img src="assets/img/dessin.png" width="80" class="img-fluid ml-3 mt-4 " alt="">
+                        <img src="assets/img/jeux.png" width="130" class="img-fluid ml-3 mt-4" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <!-- partie carousel bootstrap pour accueil pc ou grande tablette -->
         <div class="container-fluid d-none d-sm-none d-md-block d-lg-block">
-            <div class="container-fluid">
+            <div class="container">
                 <div id="carouselaccueil" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselaccueil" data-slide-to="0" class="active"></li>
@@ -85,16 +100,16 @@
                     </ol>
                     <div class="carousel-inner ">
                         <div class="carousel-item active text-center">
-                            <img class="d-block w-100 mx-2 my-3 bg-black " src="assets/img/rabbit.jpg"
-                                alt="First slide">
+                            <img class="d-block w-100 mx-2 my-3 bg-black " src="assets/img/gollem.jpg"
+                                alt="dessin d'un lapin qui se moque d'un piege">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Actualités:</h5>
                                 <p>Inktober</p>
-                                <p>Le 18eme sur le theme "Trap"</p>
+                                <p>Le 19eme sur le theme "Dizzy"</p>
                             </div>
                         </div>
                         <div class="carousel-item text-center">
-                            <img class="d-block w-100 mx-2 my-3 " src="assets/img/zeus.jpg" alt="Second slide">
+                            <img class="d-block w-100 mx-2 my-3 " src="assets/img/zeus.jpg" alt="dessin de ZEUS en version feminin">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Actualités:</h5>
                                 <p>Inktober</p>
@@ -102,7 +117,7 @@
                             </div>
                         </div>
                         <div class="carousel-item text-center">
-                            <img class="d-block w-100 mx-2 my-3 " src="assets/img/pecheur.jpg" alt="Third slide">
+                            <img class="d-block w-100 mx-2 my-3 " src="assets/img/peche.jpg" alt="Dessins d'un marin dans un phare">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Actualités:</h5>
                                 <p>Inktober</p>
@@ -121,9 +136,9 @@
                 </div>
             </div>
             <!-- partie presentation mais pour pc ou grande tablette -->
-            <div class="container-fluid d-flex flex-direction-row justify-content-center">
-                <img src="assets/img/pp.png" alt="" height="365" width="365" class="img-fluid border border-dark mt-2">
-                <div class="flex-direction-collum ml-2 ">
+            <div class="container-fluid d-flex flex-direction-row justify-content-center mb-5">
+                <img src="assets/img/pp.png" alt="Image de Lucas Thomas" width="450" class="img-fluid border border-dark mt-2">
+                <div class="flex-direction-collum ml-4 ">
                     <h1 class="fonttitle ">THOMAS Lucas</h1>
                     <p>Permis B <img src="assets/img/Fichier 1.png" alt="pictogramme voiture" height="25" width="60"
                             class="ml-2"></p>
@@ -139,17 +154,451 @@
                         <p>Anglais (Intermediaire) <img src="assets/img/English.png" alt="drapeau Anglais" height="50"
                                 width="50" class="align-self-center"></p>
                     </div>
+                    <div>
+                        <h5 class="mb-3">Centres d'intérets</h5>
+                        <div class="d-flex">
+                            <img src="assets/img/pc.png" width="90" class="img-fluid ml-4" alt="">
+                            <img src="assets/img/cinéma.png" width="75" class="img-fluid ml-4" alt="">
+                            <img src="assets/img/dessin.png" width="80" class="img-fluid ml-4" alt="">
+                            <img src="assets/img/jeux.png" width="130" class="img-fluid ml-4" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class=" img-fluid d-flex flex-row-reverse box ">
-                    <img src="assets/img/mwa_2 (1).png" height="365" width="365" class="img-fluid " alt="">
+                <div class=" d-flex flex-row-reverse box d-none d-sm-none d-md-none d-lg-block ">
+                    <img src="assets/img/mwa_2 (1).png" width="365" class="img-fluid " alt="image dessiner de Lucas THOMAS">
                 </div>
             </div>
         </div>
-        <!-- partie competences competences -->
-     <div class="container-fluid">
-         
-     </div>
-       
+        <!-- partie modal competences -->
+        <div class="modal fade" id="competences" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg  modal-md modal-xl  ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Competences</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-grise p-0">
+                        <div class="container">
+                            <div class="mt-5 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/img/PS.png" height="50" width="50" alt="logo de photoshop">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3 ">
+                                    <div class="progress">
+
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 55%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/AI.png" height="50" width="50" alt=" logo de illustrator">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3  ">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/img/ID.png" height="50" width="50" alt="logo de indesign">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3 ">
+                                    <div class="progress">
+
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 75%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/AE.png" height="50" width="50" alt="logo de after effect">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3 ">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 45%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/img/premiere.png" height="50" width="50" alt="log de premiere pro">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 75%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/HTML.png" height="50" width="50" alt=" logo de HTML">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/img/CSS.png" height="65" width="50" alt="Logo de CSS">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 70%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/Wordpress.png" height="50" width="50" alt=" logo de Wordpress">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/img/ProC.png" height="50" width="50" alt="logo de Procreate">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 85%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/picto.png" height="50" width="50" alt="Logo creer avec plusieurs logos de reseaux sociaux">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-5 d-flex justify-content-center">
+                                <div>
+                                    <img src="assets/img/js-logo.png" height="50" width="50" alt=" logo de java script">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 5%"></div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <img src="assets/img/bootstrap.png" height="50" width="50" alt="Logo de bootstrap">
+                                </div>
+                                <div class="m-3 col-3 col-md-5 col-sm-3">
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+                                            role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                            style="width: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partie modal formation -->
+        <div class="modal fade " id="formation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg  modal-md modal-xl ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Formation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-grise">
+                        <div class="container-fluid">
+                            <p>2019-2020</p>
+                            <p class="formtext">Formation Pour le titre pro de Designer Web BAC + 2 à LaManu à Amiens
+                                <img src="assets/img/Lamanu.png" alt="logo de la manu" height="65" width="50"
+                                    class="ml-2"></p>
+                            <p>2018-2019</p>
+                            <p class="formtext">Année Preparatoire en Art-Appliqué à l’ecole Pivaut à Nantes <img
+                                    src="assets/img/pivaut (1).png" alt="logo de l'ecole Pivaut" height="50" width="50"
+                                    class="ml-2"> </p>
+                            <p>2016-2017</p>
+                            <p class="formtext">Baccalauréat STI2D <img src="assets/img/lycée-de-mort.png"
+                                    alt="logo de mon lycée" height="50" width="72" class="ml-2"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partie modal experiences -->
+        <div class="modal fade " id="experiences" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg  modal-md modal-xl ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Formation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body bg-grise">
+                        <div class="container-fluid">
+                            <div class="d-flex flex-row">
+                                <div class="d-flex flex-column">
+                                    <p>Entre 2013 et 2019</p>
+                                    <p class="formtext"> Differents stages et jobs d’été à Gedimat</p>
+                                    <p>Entre 2018 et 2019</p>
+                                    <p class="formtext">Plusieurs jobs d’été à Verescence</p>
+                                    <p>2020</p>
+                                    <p class="formtext">Freelance en tant que Web-Designer/Graphiste/Monteur</p>
+                                </div>
+                                <div> <img src="assets/img/mwa5.png" class="ml-4 img-fluid"
+                                        class=" d-none d-sm-none d-md-block d-lg-block" width="500" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partie modal Portfolio/inktober -->
+        <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable  modal-lg  modal-md modal-xl " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Inktober 2020</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0 bg-grise">
+                        <div class="container-fluid">
+                            <div class="row m-0 p-0  justify-content-center ">
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/1.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/2.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/3.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/4.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/5.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/6.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/7.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/8.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/9.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/10.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/11.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/12.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/13.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/14.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/15.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/16.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/17.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/18.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/19.jpg" class="img-fluid" alt=""></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/inktober/20.jpg" class="img-fluid" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partie dessin Numeriques -->
+        <div class="modal fade" id="dessin-num" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable  modal-lg  modal-md modal-xl " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Dessins Numeriques</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0 bg-grise">
+                        <div class="container-fluid">
+                            <div class="row m-0 p-0  justify-content-center ">
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/banniereyt.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/chevalier (1).jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/clown.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/clownavecenfant.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/mask.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/monster.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/night.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/purple.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/sailormoon.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/skul.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/sorciere.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/space.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/spider.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/univers.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-num/zawa's world.jpg" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partie dessin tradi -->
+        <div class="modal fade" id="dessin-tradi" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable  modal-lg  modal-md modal-xl " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Dessins Traditionnels</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0 bg-grise">
+                        <div class="container-fluid">
+                            <div class="row m-0 p-0  justify-content-center ">
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-tradi/jack.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-tradi/octavia.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-tradi/piaf.png" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-tradi/pirate.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-tradi/space.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-tradi/tortue.png" alt="" class="img-fluid"></div>
+                                <div class="col-12 mt-2 mr-4 m-lg-3 col-sm-12 col-md-12 col-lg-4"> <img
+                                        src="assets/img/dessin-tradi/totoro.jpg" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- partie contact -->
+        <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable  modal-lg  modal-md modal-xl " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalScrollableTitle">Ou me contacter ?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body p-0 bg-grise ">
+                        <div class="container-fluid d-flex flex-row justify-content-center mt-4">
+                            <div class="d-flex flex-column ">
+                                <a href="tel:+33642075850" class="acontact mt-2">
+                                    <p class="textcontact ">tel: 06.42.07.58.50</p>
+                                </a>
+                                <a href="mailto:thomaslucas2904@gmail.com" class="acontact mt-2">
+                                    <p class="textemail">@: thomaslucas2904@gmail.com </p>
+                                </a>
+                                <a href="https://www.linkedin.com/in/lucas-thomas-0214b9195/" class="acontact mt-2">
+                                    <p class="textcontact">THOMAS Lucas <img src="assets/img/lk.png" alt="" width="60"
+                                            class="img-fluid"></p>
+                                </a>
+                                <a href="https://www.instagram.com/zawa_design/" class="acontact mt-2">
+                                    <p class="textcontact">Instagram pro <img src="assets/img/insta pro.png" width="60"
+                                            class="img-fluid" alt=""> </p>
+                                </a>
+                                <a href="https://www.instagram.com/zawa_tsuka29/" class="acontact mt-2">
+                                    <p class="textcontact">Instagram Dessin <img src="assets/img/insta dessin.png"
+                                            width="60" class="img-fluid" alt=""> </p>
+                                </a>
+                                <a href="https://www.facebook.com/Zawatsukawaii" class="acontact mt-2">
+                                    <p class="textcontact">Page facebook <img src="assets/img/fb.png" width="60"
+                                            class="img-fluid" alt=""> </p>
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column d-none d-sm-none d-md-block d-lg-block">
+                                <img src="assets/img/muchfun.png"
+                                    class="img-fluid mr-5 d-none d-sm-none d-md-block d-lg-block" width="500" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
